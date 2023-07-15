@@ -16,7 +16,7 @@ class SnapTransformOperator:
 class SnapRotationTransformOperator(bpy.types.Operator, SnapTransformOperator):
 
     bl_idname = "object.snap_active_object_rotation"
-    bl_label = "Snap active object rotation"
+    bl_label = "Snap Active Object Rotation"
 
     SNAP_TRANSFORM_CONSTRAINT_NAME = "COPY_ROTATION"
 
@@ -28,7 +28,7 @@ class SnapRotationTransformOperator(bpy.types.Operator, SnapTransformOperator):
 class SnapLocationTransformOperator(bpy.types.Operator, SnapTransformOperator):
 
     bl_idname = "object.snap_active_object_location"
-    bl_label = "Snap active object location"
+    bl_label = "Snap Active Object Location"
 
     SNAP_TRANSFORM_CONSTRAINT_NAME = "COPY_LOCATION"
 
@@ -40,7 +40,7 @@ class SnapLocationTransformOperator(bpy.types.Operator, SnapTransformOperator):
 class SnapScaleTransformOperator(bpy.types.Operator, SnapTransformOperator):
 
     bl_idname = "object.snap_active_object_scale"
-    bl_label = "Snap active object scale"
+    bl_label = "Snap Active Object Scale"
 
     SNAP_TRANSFORM_CONSTRAINT_NAME = "COPY_SCALE"
 
