@@ -1,6 +1,6 @@
 import bpy
 
-from snap_transform_addon.entry_points.bpy.operator import (
+from snap_transform_addon.operator import (
     SnapScaleTransformOperator,
     SnapLocationTransformOperator,
     SnapRotationTransformOperator,
