@@ -1,6 +1,11 @@
 import bpy
 
-from snap_transform_addon.entry_points.bpy.operator import SnapScaleTransformOperator, SnapLocationTransformOperator, SnapRotationTransformOperator
+from snap_transform_addon.entry_points.bpy.operator import (
+    SnapScaleTransformOperator,
+    SnapLocationTransformOperator,
+    SnapRotationTransformOperator,
+)
+
 
 def draw_snap_transform_menu(self, context):
     self.layout.separator()
@@ -15,4 +20,3 @@ def register():
 
 def unregister():
     bpy.types.VIEW3D_MT_snap.remove(draw_snap_transform_menu)
-

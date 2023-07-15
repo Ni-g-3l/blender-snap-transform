@@ -3,12 +3,13 @@ bl_info = {
     "author": "Ni-g-3l",
     "version": (0, 1),
     "blender": (3, 5, 1),
-    "location": "Object",
+    "location": "3D View > Snap",
     "description": "Snap selected objects transform to active object",
     "warning": "",
     "doc_url": "https://github.com/Ni-g-3l/blender-snap-transform",
     "category": "Object",
 }
+
 
 def reload_package(module_dict_main):
     import importlib
@@ -35,9 +36,10 @@ from snap_transform_addon import bpy_loader
 
 importlib.reload(bpy_loader)
 
+
 def register():
     bpy_loader.register()
 
+
 def unregister():
     bpy_loader.unregister()
-
